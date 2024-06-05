@@ -29,7 +29,7 @@
         </thead>
 
         <tbody class="table-group-divider">
-          @foreach ($type as $type)
+          @foreach ($types as $type)
         <tr>
         <th scope="row">{{$type->id}}</th>
         <td>{{$type->title}}</td>
