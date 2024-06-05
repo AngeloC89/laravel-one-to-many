@@ -27,11 +27,13 @@ class StoreProjectRequest extends FormRequest
                 'required',
                 'max:200',
                 'min:5 ',
+
              
                 
             ],
             'content' => 'required',
-            'image' => 'required'
+            'image' => 'required',
+            'type_id' => 'nullable|exists:types,id'
         ];
     }
 
